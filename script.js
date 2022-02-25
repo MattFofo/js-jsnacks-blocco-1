@@ -13,7 +13,11 @@
 //     console.log(num2);
 // }
 
+
+
 ////////////////////////////////////////////////////////////////////////
+
+
 
 // JS.SNACK - 2
 
@@ -33,7 +37,9 @@
 // }
 
 
+
 ///////////////////////////////////////////////////////////////////////////
+
 
 
 // JS.SNACK - 3
@@ -77,53 +83,64 @@
 
 
 
+
 /////////////////////////////////////////////////////////////////////
+
+
 
 
 // JS.SNACK - 4
 
-// const arrGuestList = ['marco' , 'marta' , 'giorgia' , 'luna' , 'serena' , 'antonio'];
-// const guestName = prompt('il tuo nome');
+const arrGuestList = ['marco' , 'marta' , 'giorgia' , 'luna' , 'serena' , 'antonio'];
+const guestName = prompt('il tuo nome');
 
 
-// insideTheList = false;
+insideTheList = false;
 
-// for (let i = 0; i < arrGuestList.length; i++) {
+for (let i = 0; i < arrGuestList.length; i++) {
 
-//     if (guestName == arrGuestList[i]) {
-//         insideTheList = true;
+    if (guestName.toLowerCase == arrGuestList[i].toLowerCase) {
+        insideTheList = true;
         
-//     }   
-// }
+    }   
+}
 
-// if (insideTheList) {
-//     console.log('puoi entare');
+if (insideTheList) {
+    console.log('puoi entare');
     
-// }else {
-//     console.log('il tuo nome non è nella lista');
-// }
+}else {
+    console.log('il tuo nome non è nella lista');
+}
+
 
 
 
 ///////////////////////////////////////////////////////////////////////
 
 
+
+
+
 // JS.SNACK - 5
 
 
-// let arrNum = []
+/*
 
-// for (let i = 0; i < 6; i++) {
+let arrNum = []
+
+for (let i = 0; i < 6; i++) {
     
-//     let numUser = parseInt(prompt('inserisci un numero'));
+    let numUser = parseInt(prompt('inserisci un numero'));
 
-//     if (numUser % 2 !== 0) {
-//         arrNum.push(numUser);
-//     }
+    if (numUser % 2 !== 0) {
+        arrNum.push(numUser);
+    }
     
-// }
+}
+console.log(arrNum);
 
-// console.log(arrNum);
+*/
+
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -131,6 +148,8 @@
 
 // JS.SNACK - 6
 
+
+/*
 
 const userNum = prompt('inserisci un numero a 4 cifre'); 
 console.log(typeof userNum);
@@ -148,3 +167,5 @@ for (let i = 0; i < arrUserNum.length; i++) {
 }
 
 console.log(add);
+
+*/
