@@ -177,10 +177,9 @@ console.log(arrNum);
 /*
 
 const userNum = prompt('inserisci un numero a 4 cifre'); 
-console.log(typeof userNum);
 
 arrUserNum = userNum.split('');
-console.log(arrUserNum);
+
 
 let add = 0;
 
