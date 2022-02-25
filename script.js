@@ -111,16 +111,40 @@
 // JS.SNACK - 5
 
 
-let arrNum = []
+// let arrNum = []
 
-for (let i = 0; i < 6; i++) {
+// for (let i = 0; i < 6; i++) {
     
-    let numUser = parseInt(prompt('inserisci un numero'));
+//     let numUser = parseInt(prompt('inserisci un numero'));
 
-    if (numUser % 2 !== 0) {
-        arrNum.push(numUser);
-    }
+//     if (numUser % 2 !== 0) {
+//         arrNum.push(numUser);
+//     }
+    
+// }
+
+// console.log(arrNum);
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+// JS.SNACK - 6
+
+
+const userNum = prompt('inserisci un numero a 4 cifre'); 
+console.log(typeof userNum);
+
+arrUserNum = userNum.split('');
+console.log(arrUserNum);
+
+let add = 0;
+
+
+for (let i = 0; i < arrUserNum.length; i++) {
+
+    add = add + parseInt(arrUserNum[i]);
     
 }
 
-console.log(arrNum);
+console.log(add);
