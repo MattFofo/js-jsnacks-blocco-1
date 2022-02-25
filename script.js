@@ -1,4 +1,4 @@
-// js.snack - 1
+// JS.SNACK - 1
 
 // const num1 = parseInt(prompt('inserisci un numero'));
 // const num2 = parseInt(prompt('inserisci un numero'));
@@ -15,7 +15,7 @@
 
 ////////////////////////////////////////////////////////////////////////
 
-// js.snack - 2
+// JS.SNACK - 2
 
 // const word1 = prompt('inserisci una parola');
 // const word2 = prompt("inserisci un'altra parola");
@@ -36,7 +36,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-// js.snack - 3
+// JS.SNACK - 3
 
 // let arrNumUser = [];
 
@@ -58,17 +58,49 @@
 // console.log(add);
 
 
+
+
 // metodo senza arrey
 
-let add = 0;
+// let add = 0;
 
-for (let i = 0; i < 10; i++) {
+// for (let i = 0; i < 10; i++) {
 
-    const numUser = parseInt(prompt('inserisci numero'));
-    add = add + numUser;
+//     const numUser = parseInt(prompt('inserisci numero'));
+//     add = add + numUser;
     
     
+// }
+
+
+// console.log(add);
+
+
+
+/////////////////////////////////////////////////////////////////////
+
+
+// JS.SNACK 4
+
+const arrGuestList = ['marco' , 'marta' , 'giorgia' , 'luna' , 'serena' , 'antonio'];
+const guestName = prompt('il tuo nome');
+
+
+insideTheList = false;
+
+for (let i = 0; i < arrGuestList.length; i++) {
+
+    if (guestName == arrGuestList[i]) {
+        insideTheList = true;
+        
+    }   
+}
+
+if (insideTheList) {
+    console.log('puoi entare');
+    
+}else {
+    console.log('il tuo nome non è nella lista');
 }
 
 
-console.log(add);
