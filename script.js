@@ -297,5 +297,17 @@ if (numUser % 2 == 0) {
 // SNACK - 10
 
 
+let arrListNames = ['franco', 'marco', 'laura', 'giulia', 'augusto'];
+
+let arrListSurnames = ['primo', 'secondo', 'terzo', 'quarto', 'quinto'];
+
+let arrListFake = [];
 
 
+for (let i = 0; i < 3; i++) {
+
+    arrListFake.push(arrListNames[i] + ' ' + arrListSurnames[i]);
+
+}
+
+console.log(arrListFake);
