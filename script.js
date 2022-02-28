@@ -297,17 +297,24 @@ if (numUser % 2 == 0) {
 // SNACK - 10
 
 
-let arrListNames = ['franco', 'marco', 'laura', 'giulia', 'augusto'];
+let arrListNames = ['franco', 'marco', 'laura', 'giulia', 'augusto', 'massimo', 'roberto', 'alessandra'];
 
-let arrListSurnames = ['primo', 'secondo', 'terzo', 'quarto', 'quinto'];
+let arrListSurnames = ['primo', 'secondo', 'terzo', 'quarto', 'quinto', 'sesto', 'settimo', 'ottavo'];
 
 let arrListFake = [];
 
 
+
 for (let i = 0; i < 3; i++) {
 
-    arrListFake.push(arrListNames[i] + ' ' + arrListSurnames[i]);
+    let rngNumber1 = Math.floor(Math.random() * arrListNames.length);
+    let rngNumber2 = Math.floor(Math.random() * arrListNames.length);
+
+    arrListFake.push(arrListNames[rngNumber1] + ' ' + arrListSurnames[rngNumber2]);
 
 }
 
 console.log(arrListFake);
+
+
+
