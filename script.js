@@ -235,48 +235,50 @@ console.log(sum, average);
 
 // JS.SNACK - 8
 
-/*
 
+/*
 let sum = 0;
 
-for (let i = 1; i <= 5; i++) {
-    let strUserInput = parseInt(prompt('inserisci un numero'));
+for (let i = 0; i < 5; i++) {
+    let userInput = parseInt(prompt('inserisci un numero'));
 
-    sum += strUserInput[i];
+    sum += userInput;
 
 
 
-    console.log(i, strUserInput);
+    console.log(i, userInput);
 }
 
 
 console.log(sum);
-
 */
 
 
-// let i = 0;
+/*
+let i = 0;
 
-// sum = 0;
+sum = 0;
 
-// while (i <= 5) {
-//     let strUserInput = prompt('inserisci numero');
+while (i < 5) {
+    let strUserInput = parseInt(prompt('inserisci numero'));
 
-//     sum += strUserInput[i];
+    sum += strUserInput;
 
-//     i++;
+    i++;
 
 
-// }
+}
 
-// console.log(sum);
-
+console.log(sum);
+*/
 
 
 ////////////////////////////////////////////////////////////////////////////
 
 // JS.SNACK - 9
 
+
+/*
 
 const numUser = parseInt(prompt('inserisci un numero'));
 
@@ -287,3 +289,13 @@ if (numUser % 2 == 0) {
     console.log(numUser + 1);
     
 }
+
+*/
+
+
+
+// SNACK - 10
+
+
+
+
