@@ -176,20 +176,114 @@ console.log(arrNum);
 
 /*
 
-const userNum = prompt('inserisci un numero a 4 cifre'); 
-
-arrUserNum = userNum.split('');
-
+const strUserNum = prompt('inserisci un numero a 4 cifre'); 
 
 let add = 0;
 
 
-for (let i = 0; i < arrUserNum.length; i++) {
+for (let i = 0; i < strUserNum.length; i++) {
 
-    add = add + parseInt(arrUserNum[i]);
+    add = add + parseInt(strUserNum[i]);
     
 }
 
 console.log(add);
 
 */
+
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+
+// JS.SNACK - 7
+
+
+/*
+
+let sum = 0;
+let average;
+
+
+//metodo for
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+    console.log(i);
+}
+
+average = sum / 10;
+
+console.log(sum, average);
+
+
+
+//metodo while
+
+let i = 1;
+while (i <= 10) {
+    sum += i;
+    i++;  
+}
+average = sum / 10;
+console.log(sum, average);
+
+*/
+
+
+/////////////////////////////////////////////////////////////////////
+
+// JS.SNACK - 8
+
+/*
+
+let sum = 0;
+
+for (let i = 1; i <= 5; i++) {
+    let strUserInput = parseInt(prompt('inserisci un numero'));
+
+    sum += strUserInput[i];
+
+
+
+    console.log(i, strUserInput);
+}
+
+
+console.log(sum);
+
+*/
+
+
+// let i = 0;
+
+// sum = 0;
+
+// while (i <= 5) {
+//     let strUserInput = prompt('inserisci numero');
+
+//     sum += strUserInput[i];
+
+//     i++;
+
+
+// }
+
+// console.log(sum);
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+// JS.SNACK - 9
+
+
+const numUser = parseInt(prompt('inserisci un numero'));
+
+if (numUser % 2 == 0) {
+    console.log(numUser);
+
+} else {
+    console.log(numUser + 1);
+    
+}
