@@ -265,8 +265,6 @@ while (i < 5) {
     sum += strUserInput;
 
     i++;
-
-
 }
 
 console.log(sum);
@@ -311,7 +309,7 @@ for (let i = 0; i < 3; i++) {
     let rngNumber2 = Math.floor(Math.random() * arrListNames.length);
 
     arrListFake.push(arrListNames[rngNumber1] + ' ' + arrListSurnames[rngNumber2]);
-
+    console.log(rngNumber1, rngNumber2);
 }
 
 console.log(arrListFake);
