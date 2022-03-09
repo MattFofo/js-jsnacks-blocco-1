@@ -295,24 +295,107 @@ if (numUser % 2 == 0) {
 // SNACK - 10
 
 
-let arrListNames = ['franco', 'marco', 'laura', 'giulia', 'augusto', 'massimo', 'roberto', 'alessandra'];
+// let arrListNames = ['franco', 'marco', 'laura', 'giulia', 'augusto', 'massimo', 'roberto', 'alessandra'];
 
-let arrListSurnames = ['primo', 'secondo', 'terzo', 'quarto', 'quinto', 'sesto', 'settimo', 'ottavo'];
+// let arrListSurnames = ['primo', 'secondo', 'terzo', 'quarto', 'quinto', 'sesto', 'settimo', 'ottavo'];
 
-let arrListFake = [];
+// let arrListFake = [];
 
 
 
-for (let i = 0; i < 3; i++) {
+// for (let i = 0; i < 3; i++) {
 
-    let rngNumber1 = Math.floor(Math.random() * arrListNames.length);
-    let rngNumber2 = Math.floor(Math.random() * arrListNames.length);
+//     let rngNumber1 = Math.floor(Math.random() * arrListNames.length);
+//     let rngNumber2 = Math.floor(Math.random() * arrListNames.length);
 
-    arrListFake.push(arrListNames[rngNumber1] + ' ' + arrListSurnames[rngNumber2]);
-    console.log(rngNumber1, rngNumber2);
+//     arrListFake.push(arrListNames[rngNumber1] + ' ' + arrListSurnames[rngNumber2]);
+//     console.log(rngNumber1, rngNumber2);
+// }
+
+// console.log(arrListFake);
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// SNACK 11
+
+const arrCars = [{
+    marca: 'fiat',
+    modello: 'punto',
+    alimentazione: 'metano'
+
+},
+{
+    marca: 'fiat',
+    modello: 'punto',
+    alimentazione: 'benzina'
+
+},
+{
+    marca: 'fiat',
+    modello: 'y',
+    alimentazione: 'gpl'
+},
+{
+    marca: 'opel',
+    modello: 'astra',
+    alimentazione: 'diesel'
+
+},
+{
+    marca: 'BMW',
+    modello: 'Z3',
+    alimentazione: 'benzina'
+
+},
+{
+    marca: 'jeep',
+    modello: 'renegade',
+    alimentazione: 'diesel'
+},
+{
+    marca: 'fiat',
+    modello: 'virgola',
+    alimentazione: 'benzina'
+},
+{
+    marca: 'fiat',
+    modello: 'duepunti',
+    alimentazione: 'metano'
+
+},
+{
+    marca: 'fiat',
+    modello: 'slash',
+    alimentazione: 'benzina'
+
+},
+{
+    marca: 'fiat',
+    modello: 'dot',
+    alimentazione: 'benzina'
+}];
+
+const arrBenzina = [];
+const arrDiesel = [];
+const arrAltraAlimentazione = [];
+
+
+for (let i = 0; i < arrCars.length; i++) {
+    const alimentazione = arrCars[i]['alimentazione']
+    if (alimentazione == 'benzina') {
+        arrBenzina.push(arrCars[i])
+
+    }else if (alimentazione == 'diesel') {
+        arrDiesel.push(arrCars[i])
+
+    }else {
+        arrAltraAlimentazione.push(arrCars[i])
+
+    }
 }
 
-console.log(arrListFake);
-
-
-
+console.log(arrBenzina)
+console.log(arrDiesel)
+console.log(arrAltraAlimentazione)
