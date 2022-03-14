@@ -320,6 +320,7 @@ if (numUser % 2 == 0) {
 
 // SNACK 11
 
+/*
 const arrCars = [{
     marca: 'fiat',
     modello: 'punto',
@@ -399,3 +400,95 @@ for (let i = 0; i < arrCars.length; i++) {
 console.log(arrBenzina)
 console.log(arrDiesel)
 console.log(arrAltraAlimentazione)
+
+*/
+
+
+//SNACK 12 
+/*
+Generare un array di 10 gatti con nome, sesso ed età
+Stampare le informazioni dei gatti in una lista con i maschi in blu e le femmine in rosa con opacità massima al gatto più vecchio e minima (0.2) al più giovane.
+*/
+
+const arrCats = [
+    {
+        name: 'Jerry',
+        sex: 'male',
+        age: '4'
+
+    },
+    {
+        name: 'Max',
+        sex: 'male',
+        age: '6'
+
+    },
+    {
+        name: 'Ginger',
+        sex: 'female',
+        age: '7'
+
+    },
+    {
+        name: 'Alex',
+        sex: 'male',
+        age: '5'
+
+    },
+    {
+        name: 'Nina',
+        sex: 'female',
+        age: '2'
+
+    },
+    {
+        name: 'Annie',
+        sex: 'female',
+        age: '1'
+
+    },
+    {
+        name: 'Max',
+        sex: 'male',
+        age: '3'
+
+    },
+    {
+        name: 'Sam',
+        sex: 'male',
+        age: '4'
+
+    },
+    {
+        name: 'Marie',
+        sex: 'female',
+        age: '5'
+
+    },
+    {
+        name: 'Sophie',
+        sex: 'female',
+        age: '3'
+
+    }
+];
+
+
+const eleContainer = document.querySelector('.container');
+const arrCatsAgesOrdered = arrCats.map(cat => cat.age).sort();
+console.log(arrCatsAgesOrdered)
+
+//trovo l'età massima dei gatti
+const maxAge = Math.max(...arrCatsAgesOrdered);
+console.log(maxAge)
+
+
+arrCats.forEach(cat => {
+    const eleCat = document.createElement('div');
+    eleCat.innerHTML = cat.name + ' ' + cat.age;
+    eleCat.style.opacity = (cat.age*.90) / maxAge; // opacity : age = 0.90 : maxAge
+    eleCat.style.color = cat.sex == 'male' ? 'blue' : 'red';
+
+
+    eleContainer.append(eleCat);
+})
